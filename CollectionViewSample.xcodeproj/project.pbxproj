@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8146F2FDCABA8BFAB6E6B60A /* Pods_CollectionViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E15CA5AD872EFF71DF1448 /* Pods_CollectionViewSample.framework */; };
 		DAC12FF51F24E890000B4485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC12FF41F24E890000B4485 /* AppDelegate.swift */; };
 		DAC12FF71F24E890000B4485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC12FF61F24E890000B4485 /* ViewController.swift */; };
 		DAC12FFA1F24E890000B4485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC12FF81F24E890000B4485 /* Main.storyboard */; };
 		DAC12FFC1F24E890000B4485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC12FFB1F24E890000B4485 /* Assets.xcassets */; };
 		DAC12FFF1F24E890000B4485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC12FFD1F24E890000B4485 /* LaunchScreen.storyboard */; };
+		DAC130091F24EE32000B4485 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC130071F24EE32000B4485 /* ButtonCell.swift */; };
+		DAC1300A1F24EE32000B4485 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC130081F24EE32000B4485 /* ButtonCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94B2FAB68146FECE4483E806 /* Pods-CollectionViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewSample/Pods-CollectionViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		C23D623765E64EDAD7379BEB /* Pods-CollectionViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewSample/Pods-CollectionViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E15CA5AD872EFF71DF1448 /* Pods_CollectionViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC12FF11F24E890000B4485 /* CollectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC12FF41F24E890000B4485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC12FF61F24E890000B4485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		DAC12FFB1F24E890000B4485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC12FFE1F24E890000B4485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAC130001F24E890000B4485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC130071F24EE32000B4485 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		DAC130081F24EE32000B4485 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8146F2FDCABA8BFAB6E6B60A /* Pods_CollectionViewSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467C1E0B4749CABC3AFD0292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E15CA5AD872EFF71DF1448 /* Pods_CollectionViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D8491E76B5415948907F273 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23D623765E64EDAD7379BEB /* Pods-CollectionViewSample.debug.xcconfig */,
+				94B2FAB68146FECE4483E806 /* Pods-CollectionViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAC12FE81F24E890000B4485 = {
 			isa = PBXGroup;
 			children = (
 				DAC12FF31F24E890000B4485 /* CollectionViewSample */,
 				DAC12FF21F24E890000B4485 /* Products */,
+				7D8491E76B5415948907F273 /* Pods */,
+				467C1E0B4749CABC3AFD0292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 			children = (
 				DAC12FF41F24E890000B4485 /* AppDelegate.swift */,
 				DAC12FF61F24E890000B4485 /* ViewController.swift */,
+				DAC130071F24EE32000B4485 /* ButtonCell.swift */,
+				DAC130081F24EE32000B4485 /* ButtonCell.xib */,
 				DAC12FF81F24E890000B4485 /* Main.storyboard */,
 				DAC12FFB1F24E890000B4485 /* Assets.xcassets */,
 				DAC12FFD1F24E890000B4485 /* LaunchScreen.storyboard */,
@@ -71,9 +101,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC130031F24E890000B4485 /* Build configuration list for PBXNativeTarget "CollectionViewSample" */;
 			buildPhases = (
+				25DF6F50889D519F4C818DB4 /* [CP] Check Pods Manifest.lock */,
 				DAC12FED1F24E890000B4485 /* Sources */,
 				DAC12FEE1F24E890000B4485 /* Frameworks */,
 				DAC12FEF1F24E890000B4485 /* Resources */,
+				58E2325C980365B135313A8D /* [CP] Embed Pods Frameworks */,
+				6F1F7908174DD1EBAE45C759 /* [CP] Copy Pods Resources */,
+				DAC130061F24ECE9000B4485 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -127,10 +161,73 @@
 				DAC12FFF1F24E890000B4485 /* LaunchScreen.storyboard in Resources */,
 				DAC12FFC1F24E890000B4485 /* Assets.xcassets in Resources */,
 				DAC12FFA1F24E890000B4485 /* Main.storyboard in Resources */,
+				DAC1300A1F24EE32000B4485 /* ButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DF6F50889D519F4C818DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58E2325C980365B135313A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollectionViewSample/Pods-CollectionViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1F7908174DD1EBAE45C759 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollectionViewSample/Pods-CollectionViewSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC130061F24ECE9000B4485 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAC12FED1F24E890000B4485 /* Sources */ = {
@@ -139,6 +236,7 @@
 			files = (
 				DAC12FF71F24E890000B4485 /* ViewController.swift in Sources */,
 				DAC12FF51F24E890000B4485 /* AppDelegate.swift in Sources */,
+				DAC130091F24EE32000B4485 /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +359,7 @@
 		};
 		DAC130041F24E890000B4485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23D623765E64EDAD7379BEB /* Pods-CollectionViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8U533Y3X82;
@@ -274,6 +373,7 @@
 		};
 		DAC130051F24E890000B4485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B2FAB68146FECE4483E806 /* Pods-CollectionViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8U533Y3X82;
@@ -304,6 +404,7 @@
 				DAC130051F24E890000B4485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
